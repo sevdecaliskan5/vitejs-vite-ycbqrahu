@@ -5,8 +5,6 @@ import './App.css';
 import { Chatbot } from './components/Chatbot';
 import User from './components/User';
 
-// import { GoogleGenerativeAI } from '@google/generative-ai';
-
 function App() {
   const [userInput, setUserInput] = useState('');
   const [history, setHistory] = useState([]);
@@ -16,12 +14,6 @@ function App() {
   //   'AIzaSyB_7KdDuet5_1u0qyE4eiIT2LBbFg9GwTU'
   // );
 
-  // const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
-
-  // const model = genAI.getGenerativeModel({
-  //   model: 'gemini-2.0-flash',
-  //   system_instruction: 'respond using max 3 sentences and bullet points.',
-  // });
 
   // const prompt = userInput;
 
@@ -42,27 +34,6 @@ function App() {
     }
   }
 
-  //   try {
-  //     const result = await model.generateContent([userInput]);
-  //     const response = await result.response;
-  //     const text = await response.text();
-
-  //     console.log(text);
-
-  //     const newAiResponse = { role: 'model', text: text };
-  //     setHistory((prevState) => [...prevState, newAiResponse]);
-  //   } catch (error) {
-  //     console.error('API Hatası:', error);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // }
-
-  // function handleChange(event) {
-  //   event.preventDefault();
-  //   const { value } = event.target;
-  //   setUserInput(value);
-  // }
 
   return (
     <div className="flex items-center justify-center h-screen bg-slate-200">
